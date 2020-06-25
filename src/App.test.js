@@ -24,9 +24,6 @@ beforeEach(cleanup);
 test("component rendered", async () => {
   let { getByTestId } = render(<App />);
 
-  // await waitFor(() => {
-  //   findByText("Hello CodeSandbox");
-  // });
   console.log('getByText("Hello CodeSandbox")', getByTestId("test"));
   expect(getByTestId("test")).toBeInTheDocument();
 });
